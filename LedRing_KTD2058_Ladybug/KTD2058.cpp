@@ -37,7 +37,7 @@ KTD2058::KTD2058(I2Cdev* i2c_bus)
 }
 
 
- void KTD2058:: init(uint8_t en_mode, uint8_t be_en, uint8_t ce_temp)
+ void KTD2058::init(uint8_t en_mode, uint8_t be_en, uint8_t ce_temp)
 {
   _i2c_bus->writeByte(KTD2058_ADDRESS, KTD2058_CONTROL, en_mode << 6 | be_en << 5 | ce_temp << 3);  
 }
