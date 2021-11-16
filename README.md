@@ -1,2 +1,2 @@
 # KTD2061
-Demo sketch for 36-channel KTD2058/KTD2061 rgb led driver family
+Demo sketch for KTD2058/KTD2061 36-channel rgb led driver family
