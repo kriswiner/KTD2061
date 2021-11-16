@@ -18,20 +18,7 @@ I2Cdev             i2c_0(&I2C_BUS);   // Instantiate the I2Cdev object and point
 
 #define myLed 13
 
-const boolean invert = true;   // set true if common anode, false if common cathode
-uint8_t color = 0;             // a value from 0 to 255 representing the hue
-uint32_t R = 0, G = 0, B = 0;  // the Red Green and Blue color components
-uint8_t brightness = 255;      // 255 is maximum brightness, but can be changed
 uint8_t KTD2058_chipID, KTD2058_status;
-
-uint8_t white[3]   = {0xFF, 0xFF, 0xFF};
-uint8_t red[3]     = {0xFF, 0x00, 0x00};
-uint8_t green[3]   = {0x00, 0xFF, 0x00};
-uint8_t blue[3]    = {0x00, 0x00, 0xFF};
-uint8_t yellow[3]  = {0xFF, 0xFF, 0x00};
-uint8_t magenta[3] = {0x7F, 0x00, 0xFF};
-uint8_t cyan[3]    = {0x00, 0xCC, 0xCC};
-uint8_t black[3]   = {0xFF, 0xFF, 0x00};
 
 // Configure led driver
 uint8_t en_mode = 2; // EnableMode: 1 = night, 2 = normal(day)
