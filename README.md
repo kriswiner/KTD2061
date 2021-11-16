@@ -4,7 +4,7 @@ Demo sketch for KTD2058/KTD2061 36-channel rgb led driver family
 Straightforward translation of many of the demos for the KTD2061 Evaluation Kit (KTD2061EUAC-EV1) from the original Python to
 Arduino-IDE-compatible C++.
 
-Rather than the Evaluation Kit, which is expensive, I designed and assembled my own [breakout board](https://oshpark.com/shared_projects/IfVZ6NAp) using the KTD2058 (I2C address 0x60) variant of the device family. The family comes in several variants each identical but for different I2C addresses so two or more can be easily ganged for controlling multiples batches of 36 rgb leds. 
+Rather than the Evaluation Kit, which is expensive, I designed and assembled my own [breakout board](https://oshpark.com/shared_projects/IfVZ6NAp) using the KTD2058 (I2C address 0x60) variant of the device family. The family comes in several variants each identical but for different I2C addresses so two or more can be easily ganged for controlling multiple batches of 36 rgb leds. 
 
 ![image](https://user-images.githubusercontent.com/6698410/141882034-2c540819-88d3-48e8-84b5-86b890a51f68.jpg)
 
