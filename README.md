@@ -16,4 +16,4 @@ Download the EAGLE CAD design files from OSH Park shared space [here](https://os
 
 2021 Copyright Tlera Corporation All Rights Reserved.
 
-Hardware design and Arduino sketch may be used without restriction as long as properly attributed.
+Hardware design, readme content, and Arduino sketch may be used without restriction as long as properly attributed.
