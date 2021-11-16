@@ -60,24 +60,24 @@ void setup() {
   if(KTD2058_status & 0x01) Serial.println("VCC is between VPOR and VUVLO, or the die is in thermal shutdown!");
 
 // Demo tests
-  KTD2058.quickTest(6, 5000);
+  KTD2058.quickTest(6, 5000);                // fade (0 - 7), time in ms
   digitalWrite(myLed, HIGH); delay (1000); digitalWrite(myLed, LOW);
-  KTD2058.ghostTest(0, 500);
+  KTD2058.ghostTest(0, 500);                 // fade (0 - 7), time in ms
   digitalWrite(myLed, HIGH); delay (1000); digitalWrite(myLed, LOW);
-  KTD2058.colorPalette(3, 5000);
+  KTD2058.colorPalette(3, 5000);             // cycles, time in ms
   digitalWrite(myLed, HIGH); delay (1000); digitalWrite(myLed, LOW);
   KTD2058.breathing_demo();
   digitalWrite(myLed, HIGH); delay (1000); digitalWrite(myLed, LOW);  
-  KTD2058.amazinBoot(3);
+  KTD2058.amazinBoot(3);                     // cycles
   digitalWrite(myLed, HIGH); delay (1000); digitalWrite(myLed, LOW);
   KTD2058.stackingDemo();
   digitalWrite(myLed, HIGH); delay (1000); digitalWrite(myLed, LOW);
   
-  KTD2058.twelve_color_rainbow(2, 1000, 4);
+  KTD2058.twelve_color_rainbow(2, 1000, 4);  // cycles, time in ms, fade (0 - 7)
   KTD2058.chasing_rainbow();
-  KTD2058.twelve_color_rainbow(2, 1000, 4);
-  KTD2058.rainbow_swirl(6, 125, 3);
-  KTD2058.twelve_colors(6, 600, 3);
+  KTD2058.twelve_color_rainbow(2, 1000, 4);  // cycles, time in ms, fade (0 - 7)
+  KTD2058.rainbow_swirl(6, 125, 3);          // cycles, time in ms, fade (0 - 7)
+  KTD2058.twelve_colors(6, 600, 3);          // cycles, time in ms, fade (0 - 7)
   digitalWrite(myLed, HIGH); delay (1000); digitalWrite(myLed, LOW);
  
   Serial.println("End of Setup!");
